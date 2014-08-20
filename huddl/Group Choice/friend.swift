@@ -13,7 +13,7 @@ class friend: NSObject {
     var name = ""
     var id = ""
     
-    //Returns list of huddles for one group from API
+    //Returns friend object from API
     class func getFriendById(id:NSString) -> NSMutableArray {
         
     }

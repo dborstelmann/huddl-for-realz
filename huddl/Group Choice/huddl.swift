@@ -13,6 +13,8 @@ class huddl: NSObject {
     var huddlName = ""
     var id = ""
     var group_id = ""
+
+    
     
     init(hName: NSString) {
         self.huddlName = hName
