@@ -30,8 +30,7 @@
 		7310CE9819856505006B3F92 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CE9719856505006B3F92 /* SecondViewController.swift */; };
 		7310CE9B19856505006B3F92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7310CE9919856505006B3F92 /* Main.storyboard */; };
 		7310CEA919856505006B3F92 /* Group_ChoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CEA819856505006B3F92 /* Group_ChoiceTests.swift */; };
-		7394FAFC19873EBD0050D1DD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7394FAFB19873EBD0050D1DD /* Parse.framework */; };
-		7394FAFE19873ED60050D1DD /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7394FAFD19873ED60050D1DD /* FacebookSDK.framework */; };
+		73177AF619A4FA71008269A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73177AF519A4FA71008269A0 /* FacebookSDK.framework */; };
 		7399C98A199C55EF000862BB /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399C981199C55EF000862BB /* AFHTTPRequestOperation.m */; };
 		7399C98B199C55EF000862BB /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399C982199C55EF000862BB /* AFHTTPRequestOperationManager.m */; };
 		7399C98C199C55EF000862BB /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399C983199C55EF000862BB /* AFHTTPSessionManager.m */; };
@@ -92,8 +91,7 @@
 		7310CEA219856505006B3F92 /* Group ChoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Group ChoiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310CEA719856505006B3F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7310CEA819856505006B3F92 /* Group_ChoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group_ChoiceTests.swift; sourceTree = "<group>"; };
-		7394FAFB19873EBD0050D1DD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../Downloads/Parse.framework; sourceTree = "<group>"; };
-		7394FAFD19873ED60050D1DD /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		73177AF519A4FA71008269A0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK.framework; sourceTree = "<group>"; };
 		7399C981199C55EF000862BB /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = "Group Choice/AFNetworking/AFHTTPRequestOperation.m"; sourceTree = "<group>"; };
 		7399C982199C55EF000862BB /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = "Group Choice/AFNetworking/AFHTTPRequestOperationManager.m"; sourceTree = "<group>"; };
 		7399C983199C55EF000862BB /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = "Group Choice/AFNetworking/AFHTTPSessionManager.m"; sourceTree = "<group>"; };
@@ -123,14 +121,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BCCCFB1986E68E0011341A /* QuartzCore.framework in Frameworks */,
+				73177AF619A4FA71008269A0 /* FacebookSDK.framework in Frameworks */,
 				73BCCCFC1986E68E0011341A /* Security.framework in Frameworks */,
 				73BCCCFE1986E68E0011341A /* SystemConfiguration.framework in Frameworks */,
 				73BCCCF61986E67D0011341A /* MobileCoreServices.framework in Frameworks */,
-				7394FAFC19873EBD0050D1DD /* Parse.framework in Frameworks */,
 				73BCCCF41986E6730011341A /* libz.dylib in Frameworks */,
 				73BCCCF21986E66A0011341A /* CoreLocation.framework in Frameworks */,
 				73BCCCF01986E6630011341A /* CoreGraphics.framework in Frameworks */,
-				7394FAFE19873ED60050D1DD /* FacebookSDK.framework in Frameworks */,
 				73BCCCEE1986E65D0011341A /* CFNetwork.framework in Frameworks */,
 				73BCCCEC1986E6560011341A /* AudioToolbox.framework in Frameworks */,
 			);
@@ -201,7 +198,6 @@
 				7307B3481985B6B0000E4A44 /* Images.xcassets */,
 				7307B3411985AF13000E4A44 /* Images */,
 				73DE7CFE199C36CA00F0ABB7 /* AFNetworking */,
-				7394FAFB19873EBD0050D1DD /* Parse.framework */,
 				73BCCCF71986E68E0011341A /* QuartzCore.framework */,
 				73BCCCF81986E68E0011341A /* Security.framework */,
 				73BCCCFA1986E68E0011341A /* SystemConfiguration.framework */,
@@ -211,7 +207,7 @@
 				73BCCCEF1986E6630011341A /* CoreGraphics.framework */,
 				73BCCCED1986E65D0011341A /* CFNetwork.framework */,
 				73BCCCEB1986E6560011341A /* AudioToolbox.framework */,
-				7394FAFD19873ED60050D1DD /* FacebookSDK.framework */,
+				73177AF519A4FA71008269A0 /* FacebookSDK.framework */,
 				7310CE9119856505006B3F92 /* Supporting Files */,
 			);
 			path = "Group Choice";
@@ -518,6 +514,7 @@
 					"$(inherited)",
 					/Users/dborstelmann/Downloads,
 					/Users/dborstelmann/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "/Users/dborstelmann/Swift/huddl/huddl/Group\\ Choice/AFNetworking";
 				INFOPLIST_FILE = "Group Choice/Info.plist";
@@ -543,6 +540,7 @@
 					"$(inherited)",
 					/Users/dborstelmann/Downloads,
 					/Users/dborstelmann/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "/Users/dborstelmann/Swift/huddl/huddl/Group\\ Choice/AFNetworking";
 				INFOPLIST_FILE = "Group Choice/Info.plist";
