@@ -1,5 +1,5 @@
 //
-//  vote.swift
+//  recommendations.swift
 //  Group Choice
 //
 //  Created by Daniel Borstelmann on 8/20/14.
@@ -8,8 +8,6 @@
 
 import UIKit
 
-class vote: NSObject {
-  
-    
-    
+class recommendations: NSObject {
+   
 }

@@ -13,6 +13,7 @@ class huddl: NSObject {
     var huddlName = ""
     var id = ""
     var group_id = ""
+    var recs = recommendationHandler()
 
     
     

@@ -49,8 +49,8 @@
 		73BCCCFC1986E68E0011341A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCF81986E68E0011341A /* Security.framework */; };
 		73BCCCFE1986E68E0011341A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCFA1986E68E0011341A /* SystemConfiguration.framework */; };
 		73CF941D19A50B8600D0BD9A /* friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF941C19A50B8600D0BD9A /* friend.swift */; };
-		73CF941F19A52A2A00D0BD9A /* vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF941E19A52A2A00D0BD9A /* vote.swift */; };
-		73CF942119A52A4300D0BD9A /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF942019A52A4300D0BD9A /* location.swift */; };
+		73CF942519A5353700D0BD9A /* recommendationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF942419A5353700D0BD9A /* recommendationHandler.swift */; };
+		73CF942719A535A300D0BD9A /* recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF942619A535A300D0BD9A /* recommendation.swift */; };
 		73DE7CFF199C36CA00F0ABB7 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7CFE199C36CA00F0ABB7 /* AFNetworking */; };
 		73EAB13519872947001D7DA3 /* huddlNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAB13419872947001D7DA3 /* huddlNav.swift */; };
 /* End PBXBuildFile section */
@@ -113,8 +113,8 @@
 		73BCCCFA1986E68E0011341A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73BCCCFF1986E71F0011341A /* Group Choice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Group Choice-Bridging-Header.h"; sourceTree = "<group>"; };
 		73CF941C19A50B8600D0BD9A /* friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friend.swift; sourceTree = "<group>"; };
-		73CF941E19A52A2A00D0BD9A /* vote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vote.swift; sourceTree = "<group>"; };
-		73CF942019A52A4300D0BD9A /* location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		73CF942419A5353700D0BD9A /* recommendationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recommendationHandler.swift; sourceTree = "<group>"; };
+		73CF942619A535A300D0BD9A /* recommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recommendation.swift; sourceTree = "<group>"; };
 		73DE7CFE199C36CA00F0ABB7 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
 		73EAB13419872947001D7DA3 /* huddlNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = huddlNav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,8 +279,6 @@
 			children = (
 				73AB43A619A5077600528DF8 /* huddl.swift */,
 				73AB43AE19A5292A00528DF8 /* Recommendations */,
-				73AB43AD19A528D100528DF8 /* Vote */,
-				73AB43AC19A528B200528DF8 /* Location */,
 			);
 			name = Huddls;
 			sourceTree = "<group>";
@@ -293,25 +291,11 @@
 			name = Friends;
 			sourceTree = "<group>";
 		};
-		73AB43AC19A528B200528DF8 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				73CF942019A52A4300D0BD9A /* location.swift */,
-			);
-			name = Location;
-			sourceTree = "<group>";
-		};
-		73AB43AD19A528D100528DF8 /* Vote */ = {
-			isa = PBXGroup;
-			children = (
-				73CF941E19A52A2A00D0BD9A /* vote.swift */,
-			);
-			name = Vote;
-			sourceTree = "<group>";
-		};
 		73AB43AE19A5292A00528DF8 /* Recommendations */ = {
 			isa = PBXGroup;
 			children = (
+				73CF942419A5353700D0BD9A /* recommendationHandler.swift */,
+				73CF942619A535A300D0BD9A /* recommendation.swift */,
 			);
 			name = Recommendations;
 			sourceTree = "<group>";
@@ -437,8 +421,9 @@
 			files = (
 				7399C98A199C55EF000862BB /* AFHTTPRequestOperation.m in Sources */,
 				7399C98B199C55EF000862BB /* AFHTTPRequestOperationManager.m in Sources */,
-				73CF942119A52A4300D0BD9A /* location.swift in Sources */,
 				7399C98C199C55EF000862BB /* AFHTTPSessionManager.m in Sources */,
+				73CF942519A5353700D0BD9A /* recommendationHandler.swift in Sources */,
+				73CF942719A535A300D0BD9A /* recommendation.swift in Sources */,
 				73CF941D19A50B8600D0BD9A /* friend.swift in Sources */,
 				7399C98D199C55EF000862BB /* AFNetworkReachabilityManager.m in Sources */,
 				7399C98E199C55EF000862BB /* AFSecurityPolicy.m in Sources */,
@@ -453,7 +438,6 @@
 				7307B1E119856F65000E4A44 /* GroupsandEventsTableViewController.swift in Sources */,
 				7307B1E519857AAC000E4A44 /* group.swift in Sources */,
 				7310CE9419856505006B3F92 /* AppDelegate.swift in Sources */,
-				73CF941F19A52A2A00D0BD9A /* vote.swift in Sources */,
 				73EAB13519872947001D7DA3 /* huddlNav.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
