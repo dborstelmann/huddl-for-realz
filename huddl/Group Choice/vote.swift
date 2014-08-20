@@ -9,5 +9,7 @@
 import UIKit
 
 class vote: NSObject {
-   
+  
+    var danny = ""
+    
 }
