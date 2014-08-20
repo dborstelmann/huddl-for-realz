@@ -8,12 +8,6 @@
 
 import UIKit
 
-struct friend {
-    var name = ""
-    var numGroups = 0
-    var numEvents = 0
-    var isFacebook = false
-}
 
 class group: NSObject {
     var groupName = ""
@@ -24,6 +18,9 @@ class group: NSObject {
     var nextEvent_name = ""
     var nextEvent_dateTime = ""
     var numChats = 0
+    var id = ""
+    var friendList = NSMutableArray()
+    var eventList = NSMutableArray()
     
     init(gName: NSString) {
         self.groupName = gName
@@ -33,7 +30,8 @@ class group: NSObject {
         
     }
     
-    func addFriend(friendName: NSString, facebook: Bool) {
+    func addFriend(id: NSString) {
+        friendList.addObject(id)
     }
 
 
