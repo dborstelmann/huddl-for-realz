@@ -26,8 +26,6 @@
 		7307B35F1985CD34000E4A44 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = 7307B35E1985CD34000E4A44 /* event.png */; };
 		7307B3611985F78A000E4A44 /* Vernazza-Italy-City-Sea-Beach-Boats-Houses-People-1136x640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7307B3601985F78A000E4A44 /* Vernazza-Italy-City-Sea-Beach-Boats-Houses-People-1136x640.jpg */; };
 		7310CE9419856505006B3F92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CE9319856505006B3F92 /* AppDelegate.swift */; };
-		7310CE9619856505006B3F92 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CE9519856505006B3F92 /* FirstViewController.swift */; };
-		7310CE9819856505006B3F92 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CE9719856505006B3F92 /* SecondViewController.swift */; };
 		7310CE9B19856505006B3F92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7310CE9919856505006B3F92 /* Main.storyboard */; };
 		7310CEA919856505006B3F92 /* Group_ChoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7310CEA819856505006B3F92 /* Group_ChoiceTests.swift */; };
 		73177AF619A4FA71008269A0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73177AF519A4FA71008269A0 /* FacebookSDK.framework */; };
@@ -87,8 +85,6 @@
 		7310CE8E19856505006B3F92 /* Group Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group Choice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310CE9219856505006B3F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7310CE9319856505006B3F92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7310CE9519856505006B3F92 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7310CE9719856505006B3F92 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7310CE9A19856505006B3F92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7310CEA219856505006B3F92 /* Group ChoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Group ChoiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7310CEA719856505006B3F92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,14 +189,10 @@
 				73EAB13419872947001D7DA3 /* huddlNav.swift */,
 				7307B1DE19856D75000E4A44 /* LogInViewController.swift */,
 				7307B1E019856F65000E4A44 /* GroupsandEventsTableViewController.swift */,
-				73AB43A619A5077600528DF8 /* huddl.swift */,
-				73CF941C19A50B8600D0BD9A /* friend.swift */,
-				7307B1E419857AAC000E4A44 /* group.swift */,
 				7307B33F19859727000E4A44 /* IndivGroup.swift */,
 				7307B1E219857123000E4A44 /* Events.swift */,
-				7310CE9519856505006B3F92 /* FirstViewController.swift */,
-				7310CE9719856505006B3F92 /* SecondViewController.swift */,
 				7310CE9919856505006B3F92 /* Main.storyboard */,
+				73AB43A819A5287900528DF8 /* Custom Objects */,
 				7307B3481985B6B0000E4A44 /* Images.xcassets */,
 				7307B3411985AF13000E4A44 /* Images */,
 				73DE7CFE199C36CA00F0ABB7 /* AFNetworking */,
@@ -258,6 +250,64 @@
 				7399C989199C55EF000862BB /* AFURLSessionManager.m */,
 			);
 			name = AF;
+			sourceTree = "<group>";
+		};
+		73AB43A819A5287900528DF8 /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				73AB43A919A5288900528DF8 /* Groups */,
+				73AB43AA19A5289800528DF8 /* Huddls */,
+				73AB43AB19A528A400528DF8 /* Friends */,
+			);
+			name = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		73AB43A919A5288900528DF8 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				7307B1E419857AAC000E4A44 /* group.swift */,
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
+		73AB43AA19A5289800528DF8 /* Huddls */ = {
+			isa = PBXGroup;
+			children = (
+				73AB43A619A5077600528DF8 /* huddl.swift */,
+				73AB43AE19A5292A00528DF8 /* Recommendations */,
+				73AB43AD19A528D100528DF8 /* Vote */,
+				73AB43AC19A528B200528DF8 /* Location */,
+			);
+			name = Huddls;
+			sourceTree = "<group>";
+		};
+		73AB43AB19A528A400528DF8 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				73CF941C19A50B8600D0BD9A /* friend.swift */,
+			);
+			name = Friends;
+			sourceTree = "<group>";
+		};
+		73AB43AC19A528B200528DF8 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		73AB43AD19A528D100528DF8 /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		73AB43AE19A5292A00528DF8 /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Recommendations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,11 +444,9 @@
 				73AB43A719A5077600528DF8 /* huddl.swift in Sources */,
 				7307B34019859727000E4A44 /* IndivGroup.swift in Sources */,
 				7307B1E119856F65000E4A44 /* GroupsandEventsTableViewController.swift in Sources */,
-				7310CE9819856505006B3F92 /* SecondViewController.swift in Sources */,
 				7307B1E519857AAC000E4A44 /* group.swift in Sources */,
 				7310CE9419856505006B3F92 /* AppDelegate.swift in Sources */,
 				73EAB13519872947001D7DA3 /* huddlNav.swift in Sources */,
-				7310CE9619856505006B3F92 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

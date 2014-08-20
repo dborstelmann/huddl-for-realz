@@ -15,6 +15,7 @@ class friend: NSObject {
     
     //Returns friend object from API
     class func getFriendById(id:NSString) -> NSMutableArray {
-        
+        var array = NSMutableArray()
+        return array
     }
 }

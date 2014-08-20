@@ -22,6 +22,7 @@ class huddl: NSObject {
     
     //Returns list of huddles for one group from API
     class func getHuddlsByGroupId(id:NSString) -> NSMutableArray {
-        
+        var array = NSMutableArray()
+        return array
     }
 }
