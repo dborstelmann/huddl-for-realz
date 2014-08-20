@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FLh-60-g5E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZEU-lQ-8Mo">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="FLh-60-g5E" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NGS-CR-Nvk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c3Q-N6-obP" kind="relationship" relationship="rootViewController" id="ip8-Zo-PiY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTi-W7-Vyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="205"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="0Im-bQ-cJG">
+            <objects>
+                <viewController id="c3Q-N6-obP" customClass="LogInViewController" customModule="Group_Choice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IH0-8F-nIY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vernazza-Italy-City-Sea-Beach-Boats-Houses-People-1136x640.jpg" id="6zv-HW-Y2t">
+                                <rect key="frame" x="0.0" y="0.0" width="325" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="jdP-vd-v85">
+                                <rect key="frame" x="70" y="93" width="181" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="huddl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t75-g0-riH">
+                                <rect key="frame" x="70" y="90" width="181" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2014, huddl Inc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZW2-RO-slj">
+                                <rect key="frame" x="20" y="536" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="THd-v8-ovu" customClass="FBLoginView">
+                                <rect key="frame" x="20" y="484" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dBB-Rk-MJc"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="back" destination="jdP-vd-v85" id="5h0-kf-SO0"/>
+                        <outlet property="huddl" destination="t75-g0-riH" id="Z6k-vX-Xd1"/>
+                        <outlet property="logInFB" destination="THd-v8-ovu" id="opa-57-m4d"/>
+                        <segue destination="49e-Tb-3d3" kind="modal" identifier="loggedIn" modalTransitionStyle="partialCurl" animates="NO" id="FpJ-iS-cvj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddm-qu-OUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455" y="175"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QPT-uY-1PE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lvl-4t-fZB" kind="relationship" relationship="viewControllers" id="OiS-kb-eJh"/>
+                        <segue destination="APW-78-6Te" kind="relationship" relationship="viewControllers" id="mA9-Zi-PjX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144" y="302"/>
+        </scene>
+        <!--Groups-->
+        <scene sceneID="pbw-nz-ium">
+            <objects>
+                <navigationController id="Lvl-4t-fZB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Groups" image="Group" id="DS9-mI-sXI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="PUw-hH-p5B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.031372549019607843" green="0.2627450980392157" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="0.97254901960784312" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FsL-x5-glH" kind="relationship" relationship="rootViewController" id="cgi-wk-uqf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7W-AU-IqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="-252"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="kT4-NK-MDX">
+            <objects>
+                <navigationController id="APW-78-6Te" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="tabEvent" id="7Fe-to-kpI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D2x-CE-aRu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hLa-cP-9QK" kind="relationship" relationship="rootViewController" id="FAg-Vs-GSM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLn-VS-oSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="757"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="N1V-e4-Ptm">
+            <objects>
+                <tableViewController id="hLa-cP-9QK" customClass="Events" customModule="Group_Choice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EeS-U0-8Hg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="hLa-cP-9QK" id="5bF-5C-qzS"/>
+                            <outlet property="delegate" destination="hLa-cP-9QK" id="mLN-B5-nhw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="p2X-pM-Rpr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IS0-J2-KX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="670"/>
+        </scene>
+        <!--Groupsand Events Table View Controller-->
+        <scene sceneID="764-zP-aJT">
+            <objects>
+                <tableViewController id="FsL-x5-glH" customClass="GroupsandEventsTableViewController" customModule="Group_Choice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Ce-R4-zwf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="FsL-x5-glH" id="8Bj-mW-p6h"/>
+                            <outlet property="delegate" destination="FsL-x5-glH" id="ELE-tZ-un5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="huX-Wf-ItO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfi-ZH-4op" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="-319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group" width="60" height="60"/>
+        <image name="Vernazza-Italy-City-Sea-Beach-Boats-Houses-People-1136x640.jpg" width="640" height="1136"/>
+        <image name="tabEvent" width="60" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>
