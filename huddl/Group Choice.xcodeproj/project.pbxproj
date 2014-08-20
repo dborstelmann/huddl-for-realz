@@ -40,6 +40,7 @@
 		7399C990199C55EF000862BB /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399C987199C55EF000862BB /* AFURLRequestSerialization.m */; };
 		7399C991199C55EF000862BB /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399C988199C55EF000862BB /* AFURLResponseSerialization.m */; };
 		7399C992199C55EF000862BB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399C989199C55EF000862BB /* AFURLSessionManager.m */; };
+		73AB43A719A5077600528DF8 /* huddl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB43A619A5077600528DF8 /* huddl.swift */; };
 		73BCCCEC1986E6560011341A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCEB1986E6560011341A /* AudioToolbox.framework */; };
 		73BCCCEE1986E65D0011341A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCED1986E65D0011341A /* CFNetwork.framework */; };
 		73BCCCF01986E6630011341A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCEF1986E6630011341A /* CoreGraphics.framework */; };
@@ -101,6 +102,7 @@
 		7399C987199C55EF000862BB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = "Group Choice/AFNetworking/AFURLRequestSerialization.m"; sourceTree = "<group>"; };
 		7399C988199C55EF000862BB /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = "Group Choice/AFNetworking/AFURLResponseSerialization.m"; sourceTree = "<group>"; };
 		7399C989199C55EF000862BB /* AFURLSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = "Group Choice/AFNetworking/AFURLSessionManager.m"; sourceTree = "<group>"; };
+		73AB43A619A5077600528DF8 /* huddl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = huddl.swift; sourceTree = "<group>"; };
 		73BCCCEB1986E6560011341A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		73BCCCED1986E65D0011341A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		73BCCCEF1986E6630011341A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,6 +191,7 @@
 				73EAB13419872947001D7DA3 /* huddlNav.swift */,
 				7307B1DE19856D75000E4A44 /* LogInViewController.swift */,
 				7307B1E019856F65000E4A44 /* GroupsandEventsTableViewController.swift */,
+				73AB43A619A5077600528DF8 /* huddl.swift */,
 				7307B1E419857AAC000E4A44 /* group.swift */,
 				7307B33F19859727000E4A44 /* IndivGroup.swift */,
 				7307B1E219857123000E4A44 /* Events.swift */,
@@ -384,6 +387,7 @@
 				7399C992199C55EF000862BB /* AFURLSessionManager.m in Sources */,
 				7307B1E319857123000E4A44 /* Events.swift in Sources */,
 				7307B1DF19856D75000E4A44 /* LogInViewController.swift in Sources */,
+				73AB43A719A5077600528DF8 /* huddl.swift in Sources */,
 				7307B34019859727000E4A44 /* IndivGroup.swift in Sources */,
 				7307B1E119856F65000E4A44 /* GroupsandEventsTableViewController.swift in Sources */,
 				7310CE9819856505006B3F92 /* SecondViewController.swift in Sources */,
