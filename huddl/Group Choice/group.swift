@@ -20,18 +20,23 @@ class group: NSObject {
     var numChats = 0
     var id = ""
     var friendList = NSMutableArray()
-    var eventList = NSMutableArray()
+    var huddlList = NSMutableArray()
     
     init(gName: NSString) {
         self.groupName = gName
     }
     
-    func addEvent(date: NSString, desc: NSString, keys: NSArray) {
-        
+    func getHuddlForGroup(id: NSString) {
+        huddlList = huddl.getHuddlsByGroupId(id)
+    }
+    
+    func addHuddl(name: NSString){
+        var newhuddl = huddl(hName: name)
+        huddlList.addObject(newhuddl)
     }
     
     func addFriend(id: NSString) {
-        friendList.addObject(id)
+        friendList.addObject(friend.getFriendById(id))
     }
 
 

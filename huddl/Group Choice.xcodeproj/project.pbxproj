@@ -50,6 +50,7 @@
 		73BCCCFB1986E68E0011341A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCF71986E68E0011341A /* QuartzCore.framework */; };
 		73BCCCFC1986E68E0011341A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCF81986E68E0011341A /* Security.framework */; };
 		73BCCCFE1986E68E0011341A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BCCCFA1986E68E0011341A /* SystemConfiguration.framework */; };
+		73CF941D19A50B8600D0BD9A /* friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CF941C19A50B8600D0BD9A /* friend.swift */; };
 		73DE7CFF199C36CA00F0ABB7 /* AFNetworking in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7CFE199C36CA00F0ABB7 /* AFNetworking */; };
 		73EAB13519872947001D7DA3 /* huddlNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAB13419872947001D7DA3 /* huddlNav.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,7 @@
 		73BCCCF81986E68E0011341A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		73BCCCFA1986E68E0011341A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73BCCCFF1986E71F0011341A /* Group Choice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Group Choice-Bridging-Header.h"; sourceTree = "<group>"; };
+		73CF941C19A50B8600D0BD9A /* friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friend.swift; sourceTree = "<group>"; };
 		73DE7CFE199C36CA00F0ABB7 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AFNetworking; sourceTree = "<group>"; };
 		73EAB13419872947001D7DA3 /* huddlNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = huddlNav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +194,7 @@
 				7307B1DE19856D75000E4A44 /* LogInViewController.swift */,
 				7307B1E019856F65000E4A44 /* GroupsandEventsTableViewController.swift */,
 				73AB43A619A5077600528DF8 /* huddl.swift */,
+				73CF941C19A50B8600D0BD9A /* friend.swift */,
 				7307B1E419857AAC000E4A44 /* group.swift */,
 				7307B33F19859727000E4A44 /* IndivGroup.swift */,
 				7307B1E219857123000E4A44 /* Events.swift */,
@@ -379,6 +382,7 @@
 				7399C98A199C55EF000862BB /* AFHTTPRequestOperation.m in Sources */,
 				7399C98B199C55EF000862BB /* AFHTTPRequestOperationManager.m in Sources */,
 				7399C98C199C55EF000862BB /* AFHTTPSessionManager.m in Sources */,
+				73CF941D19A50B8600D0BD9A /* friend.swift in Sources */,
 				7399C98D199C55EF000862BB /* AFNetworkReachabilityManager.m in Sources */,
 				7399C98E199C55EF000862BB /* AFSecurityPolicy.m in Sources */,
 				7399C98F199C55EF000862BB /* AFURLConnectionOperation.m in Sources */,

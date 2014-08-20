@@ -1,5 +1,5 @@
 //
-//  huddl.swift
+//  friend.swift
 //  Group Choice
 //
 //  Created by Daniel Borstelmann on 8/20/14.
@@ -8,18 +8,13 @@
 
 import UIKit
 
-class huddl: NSObject {
-    
-    var huddlName = ""
+class friend: NSObject {
+   
+    var name = ""
     var id = ""
-    var group_id = ""
-    
-    init(hName: NSString) {
-        self.huddlName = hName
-    }
     
     //Returns list of huddles for one group from API
-    class func getHuddlsByGroupId(id:NSString) -> NSMutableArray {
+    class func getFriendById(id:NSString) -> NSMutableArray {
         
     }
 }
